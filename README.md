@@ -1,6 +1,8 @@
 # QuantumSpinGuidedWave
 Three-Step Code used for publication in Ultrasonics and ...
 
+Codes could be used freely (with or without modification) subjected to proper citation of the work by the author and the paper listed above.
+
 The codes are divided into three steps. 
 
 Step 1: It helps find the dispersion curves and wavemodes in a wave guided with user-selected material properties. The code finds the Wave numbers at given frequencies. 
@@ -10,7 +12,7 @@ Step 3: In step 3 First Select Which Spin Characteristic we want to explore.
 % Select RLSH index = 2 for All RL and SH mode 
 %% SpinStates
 % Please note for RLSH = 2 SpinState can only take values between 3 and 10.
-% as 1 and 2 is not relevant in RLSH SpinState. 
+% as 1 and 2 are not relevant in RLSH SpinState. 
 
 % SpinState = 1 ; % s_fi
 % SpinState = 2 ; % s_zi

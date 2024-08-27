@@ -10,15 +10,20 @@ If you use this code in your research or any other work, please cite the followi
 [Author(s)], "[Title of Your GitHub Repository]," GitHub, [Year]. Available at: [URL of the GitHub repository].
 
 
-Three-Step Code used for publication in Ultrasonics and ...
+## Three-Step Code used for publication in Ultrasonics and ...
 
 Codes could be used freely (with or without modification) subjected to proper citation of the work by the author and the paper listed above.
 
 The codes are divided into three steps. 
 
-Step 1: It helps find the dispersion curves and wavemodes in a wave guided with user-selected material properties. The code finds the Wave numbers at given frequencies. 
-Step 2: Modal eigenstates of Guided waves are calculated. From Step 1 the eigenvalues are known. For any k some frequency eigenvalues are found in Step 1. Select any mode and its eigenvalue, to plug in Step 2 code, to find the amplitudes of the wave potentials. Use the amplitude to calculate the wave displacement field. 
-Step 3: In step 3 First Select Which Spin Characteristic we want to explore. 
+### Step 1: 
+It helps find the dispersion curves and wavemodes in a wave guided with user-selected material properties. The code finds the Wave numbers at given frequencies. 
+
+### Step 2: 
+Modal eigenstates of Guided waves are calculated. From Step 1 the eigenvalues are known. For any k some frequency eigenvalues are found in Step 1. Select any mode and its eigenvalue, to plug in Step 2 code, to find the amplitudes of the wave potentials. Use the amplitude to calculate the wave displacement field.
+
+### Step 3: 
+In step 3 First Select Which Spin Characteristic we want to explore. 
 % Select RLSH  index = 1 for Rayleigh-Lamb Modes 
 % Select RLSH index = 2 for All RL and SH mode 
 %% SpinStates
@@ -38,7 +43,7 @@ Step 3: In step 3 First Select Which Spin Characteristic we want to explore.
 % SpinState = 10 ; % s_ziz3dd
 
 Plug the Wave potential amplitudes from Step 2 and proceed to explore the spin state. 
-Call 
+#### Call 
     % % RL mode only For Rayleigh-Lamb waves only 
     GWUTSpinFun(k,w,A1,A2,B1,B2,SpinState, ...
                                            E, nu, rho,...
@@ -47,7 +52,7 @@ Call
                                            plotindex);
                                            
                                            For Rayleigh-Lamb waves only 
-Call 
+#### Call 
     % RL & SH mode only : 
     GWUTSpinFun_RLSH(k,kh,w,A1,A2,B1,B2,C1,C2,SpinState, ...
                                            E, nu, rho,...

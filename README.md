@@ -1,4 +1,15 @@
-# QuantumSpinGuidedWave
+### QuantumSpinGuidedWave
+
+# Citation Requirements
+
+Citation:
+If you use this code in your research or any other work, please cite the following paper and repository:
+•	Paper Citation:
+[Author(s)], "[Title of Your Paper]," [Journal/Conference Name], [Year], [DOI or URL if available].
+•	Code Citation:
+[Author(s)], "[Title of Your GitHub Repository]," GitHub, [Year]. Available at: [URL of the GitHub repository].
+
+
 Three-Step Code used for publication in Ultrasonics and ...
 
 Codes could be used freely (with or without modification) subjected to proper citation of the work by the author and the paper listed above.

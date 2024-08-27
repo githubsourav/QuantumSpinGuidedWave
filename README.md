@@ -1,8 +1,8 @@
-### QuantumSpinGuidedWave
+# QuantumSpinGuidedWave
 
-# Citation Requirements
+## Citation Requirements
 
-Citation:
+###Citation:
 If you use this code in your research or any other work, please cite the following paper and repository:
 •	Paper Citation:
 [Author(s)], "[Title of Your Paper]," [Journal/Conference Name], [Year], [DOI or URL if available].

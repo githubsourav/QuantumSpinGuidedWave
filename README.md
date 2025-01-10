@@ -62,3 +62,48 @@ Plug the Wave potential amplitudes from Step 2 and proceed to explore the spin s
 
                                            Explore Hybrid Spin States when RL and SH are both present in a 3D waveguide. 
 end
+
+
+### Step 3.1: Spin Superposition
+In the code name MainFunCallSpinGWUT_RLSH_SHM_SuperPosedSpin.m one can find the superposition of all 14 spin states of guided waves
+The functions mentioned above are run in a loop 
+
+#### Part of the Code that uses the above sub-program for superposition 
+Total_SAM = cell(14,1);
+TotalNormSAM = zeros(num_points_x+1,3);
+for wave = 1:2
+    
+    RLSH = wave;
+    %% 
+    if (RLSH ==1) 
+        %%
+        for SpinState = 1:6
+            % % RL mode only 
+            Spin_imag = GWUTSpinFun_SHM(k,w,A1,A2,B1,B2,SpinState, ...
+                                                   E, nu, rho,...
+                                                   d, xl, xd, x_min, x_max, ...
+                                                   num_points_x, num_points_y,...
+                                                   plotindex);
+
+            Total_SAM{SpinState}=  Spin_imag;
+            TotalNormSAM = TotalNormSAM + Spin_imag;
+        end
+    
+    elseif (RLSH ==2)
+        % RL & SH mode only 
+        %%
+        for SpinState = 7:14
+
+            Spin_imag = GWUTSpinFun_RLSH_SHM(k,kh,w,A1,A2,B1,B2,C1,C2,SpinState, ...
+                                                   E, nu, rho,...
+                                                   d, xl, xd, x_min, x_max, ...
+                                                   num_points_x, num_points_y,...
+                                                   plotindex);
+            Total_SAM{SpinState} = Spin_imag;
+            TotalNormSAM = TotalNormSAM + Spin_imag;
+        end
+    end
+
+
+end
+%%
